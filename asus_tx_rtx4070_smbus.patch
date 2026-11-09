@@ -1,0 +1,25 @@
+diff --git a/Controllers/AsusAuraGPUController/AsusAuraGPUControllerDetect.cpp b/Controllers/AsusAuraGPUController/AsusAuraGPUControllerDetect.cpp
+index ae11061b..56e50a9b 100644
+--- a/Controllers/AsusAuraGPUController/AsusAuraGPUControllerDetect.cpp
++++ b/Controllers/AsusAuraGPUController/AsusAuraGPUControllerDetect.cpp
+@@ -76,7 +76,7 @@ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce GTX 1080 Gaming OC",
+ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce GTX 1080 A8G Gaming",            DetectAsusAuraGPUControllers,   NVIDIA_VEN,     NVIDIA_GTX1080_DEV,         ASUS_SUB_VEN,   ASUS_ROG_STRIX_GTX1080_A8G_GAMING,          0x29);
+ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce GTX 1080 Gaming OC",             DetectAsusAuraGPUControllers,   NVIDIA_VEN,     NVIDIA_GTX1080_DEV,         ASUS_SUB_VEN,   ASUS_ROG_STRIX_GTX1080_O8G_GAMING,          0x29);
+ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce GTX 1080 Gaming OC 11Gbps",      DetectAsusAuraGPUControllers,   NVIDIA_VEN,     NVIDIA_GTX1080_DEV,         ASUS_SUB_VEN,   ASUS_ROG_STRIX_GTX1080_O8G_11GBPS,          0x29);
+-REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce GTX 1080 Ti Gaming",             DetectAsusAuraGPUControllers,   NVIDIA_VEN,     NVIDIA_GTX1080TI_DEV,       ASUS_SUB_VEN,   ASUS_ROG_STRIX_GTX1080TI_GAMING,            0x29);
++REGISTER_I2C_PCI_DETECTOR("ASUS TX GeForce RTX 4070 Gaming OC", DetectAsusAuraGPUControllers, NVIDIA_VEN, 0x2786, ASUS_SUB_VEN, 0x8923, 0x67);	
+ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce GTX 1080 Ti Gaming",             DetectAsusAuraGPUControllers,   NVIDIA_VEN,     NVIDIA_GTX1080TI_DEV,       ASUS_SUB_VEN,   ASUS_ROG_STRIX_GTX1080TI_11G_GAMING,        0x29);
+ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce GTX 1080 Ti Gaming OC",          DetectAsusAuraGPUControllers,   NVIDIA_VEN,     NVIDIA_GTX1080TI_DEV,       ASUS_SUB_VEN,   ASUS_ROG_STRIX_GTX1080TI_O11G_GAMING,       0x29);
+ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce GTX 1080 Ti Gaming OC",          DetectAsusAuraGPUControllers,   NVIDIA_VEN,     NVIDIA_GTX1080TI_DEV,       ASUS_SUB_VEN,   ASUS_ROG_STRIX_GTX1080TI_O11G_GAMING_A02,   0x29);
+diff --git a/Controllers/ENESMBusController/ENESMBusControllerDetect.cpp b/Controllers/ENESMBusController/ENESMBusControllerDetect.cpp
+index eec536a5..20463f59 100644
+--- a/Controllers/ENESMBusController/ENESMBusControllerDetect.cpp
++++ b/Controllers/ENESMBusController/ENESMBusControllerDetect.cpp
+@@ -360,6 +360,7 @@ REGISTER_I2C_PCI_DETECTOR("ASUS TUF GeForce RTX 4070 Gaming",
+ REGISTER_I2C_PCI_DETECTOR("ASUS TUF GeForce RTX 4070 Gaming OC",                        DetectENESMBusGPUControllers,   NVIDIA_VEN,     NVIDIA_RTX4070_DEV,         ASUS_SUB_VEN,   ASUS_TUF_RTX_4070_O12G_GAMING,                  0x67);
+ REGISTER_I2C_PCI_DETECTOR("ASUS TUF GeForce RTX 4070 Gaming OC",                        DetectENESMBusGPUControllers,   NVIDIA_VEN,     NVIDIA_RTX4070_DEV,         ASUS_SUB_VEN,   ASUS_TUF_RTX_4070_O12G_GAMING_2,                0x67);
+ REGISTER_I2C_PCI_DETECTOR("ASUS TUF GeForce RTX 4070 Gaming OC",                        DetectENESMBusGPUControllers,   NVIDIA_VEN,     NVIDIA_RTX4070_DEV,         ASUS_SUB_VEN,   ASUS_TUF_RTX_4070_O12G_GAMING_3,                0x67);
++REGISTER_I2C_PCI_DETECTOR("ASUS TX GeForce RTX 4070 Gaming OC", DetectENESMBusGPUControllers, NVIDIA_VEN, NVIDIA_RTX4070_DEV, ASUS_SUB_VEN, 0x8923, 0x67);
+ REGISTER_I2C_PCI_DETECTOR("ASUS TUF GeForce RTX 4070 SUPER Gaming",                     DetectENESMBusGPUControllers,   NVIDIA_VEN,     NVIDIA_RTX4070S_DEV,        ASUS_SUB_VEN,   ASUS_TUF_RTX_4070S_12G_GAMING,                  0x67);
+ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce RTX 4070 Gaming OC",                  DetectENESMBusGPUControllers,   NVIDIA_VEN,     NVIDIA_RTX4070_DEV,         ASUS_SUB_VEN,   ASUS_ROG_STRIX_RTX_4070_O12G_GAMING,            0x67);
+ REGISTER_I2C_PCI_DETECTOR("ASUS ROG STRIX GeForce RTX 4070 SUPER Gaming",               DetectENESMBusGPUControllers,   NVIDIA_VEN,     NVIDIA_RTX4070S_DEV,        ASUS_SUB_VEN,   ASUS_ROG_STRIX_RTX_4070S_12G_GAMING,            0x67);
